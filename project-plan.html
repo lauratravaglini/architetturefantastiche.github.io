@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+ <!-- quello che scrivo nell'head non verrà visualizzato dall'utente, ma serve per comunivare con il browser -->
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="description" content="web project plan"/>
+	<meta name="author" content="Laura Travaglini"/>
+	<link type="text/css" href="stile1.css" rel="stylesheet"/>
+	<script src="https://kit.fontawesome.com/3d5a12d291.js" crossorigin="anonymous"></script>
+	<title> Web Project Plan </title> <!--quello che compare sulla linguetta della finestra, il titolo -->
+</head>
+<!-- ora apro il body che conterrà tuuutta la pagina, aggiungo anche una div come megacontenitore di tutto -->
+<div id="pagina"> 
+<body>
+	<div id="testata">
+	<header>
+
+        <div class="tooltip"><a href="index.html" target="_blank"><i class="fas fa-angle-double-left fa-2x"></i></a><span class="tooltiptext">Torna alla pagina</span></div>
+        
+		<h1> WEB PROJECT PLAN </h1> 
+        <h3> Laura Travaglini <br/> 
+             Lettere Moderne – UniBo <br/> 
+             “Informatica Umanistica” a.a. 2019-2020 <br/>
+         </h3>
+	</header>
+    </div>
+
+    <div id="indice">
+    	<ol>
+    		<li> <a href="#beb"> Brief e benchmark </a> </li>
+            <ul>
+                <li><a> Obiettivi e finalità</a></li>
+                <li><a> Utente tipo </a></li>
+                <li><a> Competitors </a></li>
+            </ul>
+    		<li> <a href="#strutturaelayout"> Struttura e layout </a></li>
+            <ul>
+                <li><a> La mappa dei concetti </a></li>
+                <li><a> Schema delle dipendenze </a></li>
+                <li><a> Architettura dell'interfaccia </a></li>
+                <li><a> Wireframe </a></li>
+                <li><a> Usabilità </a></li>
+            </ul>
+    		<li><a href="#linguaggi"> Linguaggi </a></li>
+    		<li><a href="#collezione"> La collezione </a></li>
+    		<li><a href="#ses"> Strumenti e servizi </a></li>
+            <ul>
+                <li><a> Conservazione </a></li>
+                <li><a> Arricchimento </a></li>
+                <li><a> Valorizzazione </a></li>
+            </ul>
+    		<li> <a href="#bib"> Bibliografia </a> </li>
+    	</ol>
+    </div>
+
+    <div>
+  <article>
+    <h2 id="beb"> 1. Brief e Benchmark </h2>
+
+       <p> <h4>Obiettivi e finalità:</h4>
+           Il sito <em>Architetture fantastiche e dove trovarle</em> &egrave; una raccolta online di <strong>progetti architettonici mai realizzati</strong>, ma entrati a far parte della storia dell’arte o dell’immaginario collettivo grazie alla loro originalit&agrave;. <br/> 
+           Lo scopo principale della pagina &egrave; infatti quello di porsi come <strong>risorsa divulgativa</strong> e di analizzare l’argomento secondo alcune specifiche prospettive: le singole opere, i loro autori e il loro contesto. <br/>
+           Queste due volont&agrave; sono espresse sia attraverso la homepage, che in qualche modo mostra sinteticamente il materiale presente sulla risorsa, ma soprattutto tramite i due canali di navigazione primari <strong>&quot;Storia&quot;</strong>, una pagina di inquadramento storico dell'argomento, e <strong>&quot;Esplora&quot;</strong>, che a sua volta presenta dei canali di navigazione secondari quali <strong>&quot;Progetti&quot;</strong>, <strong>&quot;Artisti&quot;</strong> e <strong>&quot;Luoghi&quot;</strong>. <br/>
+           Altra aspirazione della pagina &egrave; prevista nell’ultimo canale di navigazione primario, cio&egrave; <strong>“Extra”</strong>, che desidera far comunicare il cos&igrave; specifico argomento di interesse della risorsa con altri materiali. Teoricamente infatti si porrebbe come una sorta di <em>blog</em> o coacervo di articoli e media su tutti i contenuti che questi progetti hanno saputo influenzare nel corso del tempo, come: altre opere architettoniche, opere letterarie, opere d’arte, discussioni filosofiche, e cos&igrave; via.
+
+           <br/>
+
+           <h4>Utente tipo:</h4>
+           Lo user-tipo della risorsa &egrave; un appassionato dell’argomento, o comunque in larga scala interessato a campi quali l’architettura o l’arte, ma senza altre specifiche restrizioni di et&agrave; o istruzione.
+
+           <br/>
+
+           <h4>Competitors:</h4>
+
+           <em>Architetture Fantastiche e dove trovarle</em> &egrave; l’unica risorsa online ad approfondire questo argomento e a riunire in maniera omogenea i progetti che si possono annoverare sotto la medesima categoria di &quot;progetti architettonici mai realizzati&quot;. <br/>
+           I <strong>competitors</strong> maggiori dal punto di vista contenutistico sono sicuramente:
+           <ul> <li> <a href="https://it.wikipedia.org/wiki/Architettura_rivoluzionaria" target="_blank"><strong>Wikipedia / Architettura Rivoluzionaria</strong></a>: Wikipedia in qualità di risorsa a carattere enciclopedico analizza nel dettaglio la storia e i progetti architettonici (tra cui parecchi mai realizzati) ascrivibili all’architettura rivoluzionaria. <br/> Quest’ultima &egrave; quella fase del Neoclassicismo che, alla vigilia della Rivoluzione francese, si caratterizz&ograve;, sul piano formale, per l'alterazione del repertorio dell'antichità classica, assumendo nel contempo un'intensa valenza etica ed evocativa con forti slanci utopici, simbolici e visionari. <br/>
+           I limiti di questa risorsa, per motivi di impostazione di una qualsiasi pagina Wikipedia, sono sicuramente la circospezione ad uno specifico sottogruppo delle <em>&quot;architetture fantastiche&quot;</em> e la mancanza di una puntuale raccolta ordinata. </li>
+           <li> Inoltra va ricordato che il web &egrave; ricco di singoli <strong>articoli</strong> circa le <em>&quot;architetture fantastiche&quot;</em>, che per&ograve; analizzano in maniera pi&ugrave; o meno sommaria l’argomento e mancano anch’essi di una raccolta omogenea del materiale. <br/>
+           Alcuni esempi: 
+            <ul> 
+                <li> da <strong><a href="https://www.architetturaecosostenibile.it/architettura/progetti/progetti-mai-realizzati-297" target="_blank">Architetturasostenibile.it</a></strong> </li>
+                <li> da <strong><a href="https://www.onemag.it/i-piu-imponenti-progetti-storici-di-architettura-mai-costruiti/" target="_blank">Onemag.it</a></strong></li>
+                <li> da <strong><a href="http://www.istitutomariausiliatrice.it/unaragioneinpiu/2013/04/11/utopico-o-possibile/" target="_blank">Istitutomariausiliatrice.it</a></strong> </li>
+            </ul>
+           </li>
+           </ul>
+
+           Dal punto di vista estetico le due risorse di riferimento sono state sicuramente <a href="https://www.europeana.eu/portal/it" target="_blank"><strong>Europeana</strong></a> e <a href="http://www.galassiaariosto.sns.it" target="_blank"><strong>Galassia Ariosto</strong></a>, per la loro linearit&agrave; grafica e coerenza di navigazione. <br/> 
+           Per questi motivi sono stati scelti come punti di partenza per alcune delle soluzioni di layout ma anche di estetica della pagina, come la presenza sintetica in homepage del materiale contenuto nella risorsa (Galassia Ariosto e Europeana), l’utilizzo di una timeline (Galassia Ariosto), e cos&igrave; via.
+
+        </p>
+
+    <h2 id="strutturaelayout"> 2. Struttura e layout </h2>
+       <p> 
+       <div class="row">
+        <div class="mappadeiconcetti">
+
+        <h4>La mappa dei concetti</h4>
+        I contenuti della pagina e i collegamenti tra loro presenti possono essere sintetizzati con questa mappa concettuale. <br/>
+        La risorsa contiene principalmente:
+        <ul> 
+            <li>i <strong>progetti</strong> selezionati, di cui si forniscono le specifiche informazioni (immagine, titolo, autore, data, supporto, dimensioni, ubicazione, descrizione, progetti correlati);</li>
+            <li>gli <strong>autori</strong> dei progetti, di cui si forniscono le specifiche informazioni (immagine, nome, data di nascita e morte, biografia, progetti correlati);</li>
+            <li>i <strong>luoghi/contesti</strong> in cui i progetti sono stati pensati e/o realizzati, di cui si forniscono le specifiche informazioni (immagine da mappa, titolo/nome, autori correlati, descrizione, ubicazione, progetti correlati)</li>
+        </ul>
+
+        </div>
+        <div class="immagine1">
+
+        <img src="images/mappadeiconcetti.jpg"> 
+
+         </div>
+
+       </div>
+
+       <div class="row">
+        <div class="schemadelledipendenze">
+        <h4>Schema delle dipendenze</h4>
+        A livello gerarchico i contenuti della risorsa possono essere sintetizzati con questo schema delle dipendenze. <br/>
+        Ci sono tre pagine di primo livello: 
+        <ul> 
+            <li><strong>&quot;Storia&quot;</strong>: una pagina dedicata alla spiegazione dell'evoluzione di questi progetti poco fortunati nella storia;</li> 
+            <li><strong>&quot;Esplora&quot;</strong>: canale per la navigazione nelle collezioni della pagina;</li>
+            <li><strong>&quot;Extra&quot;</strong>: una sorta di blog della pagina su contenuti correlati all'argomento della risorsa.</li> 
+        </ul>
+        <br/> Da <strong>&quot;Eslpra&quot;</strong> si pu&ograve; accedere a tre pagine di secondo livello: 
+        <ul>
+            <li><strong>&quot;Progetti&quot;</strong>: canale per la navigazione tra i progetti catalogati;</li> 
+            <li><strong>&quot;Artisti&quot;</strong>: canale per la navigazione tra gli artisti correlati ai progetti catalogati;</li> 
+            <li><strong>&quot;Luoghi&quot;</strong>: si immagina una mappa interattiva con i luoghi più significativi delle varie tappe dei progetti catalogati;</li> 
+        </ul>
+        composte da collezioni della categoria che rappresentano. <br/>
+
+        Da queste ultime &egrave; possibile accedere a pagine di terzo livello con i singoli item presentati nelle collezioni. <br/>
+        &Egrave; previsto che ogni pagina richiami l'altra attraverso link contestuali presenti nella <em>section</em> o nell'<em>aside</em>.<br/>
+        Dal footer &egrave; è possibile accedere ai social della pagina, alla pagina dei contatti e al web project plan.
+        </div>
+        <div class="immagine2">
+
+        <img src="images/schemadelledipendenze.jpg"> 
+
+         </div>
+
+       </div>
+
+        <h4>Wireframe</h4>
+
+        <div class="row">
+        <div class="wireframe_home">
+
+        <h5>Home</h5>
+        <ul> 
+            <li>testata uguale per tutte le pagine con immagine evocativa dei progetti e titolo della risorsa;</li>
+            <li>barra di navigazione con i canali di navigazione primari uguale per tutte le pagine e la searchbar; </li>
+            <li> dalla barra di navigazione primaria è possibile accedere alla barra di navigazione secondaria; </li>
+            <li>sezione con immagini dei progetti e relative descrizioni side-by-side coronate da una frase riassuntiva sui contenuti della pagina; </li>
+            <li>sezione con immagine di un artista e breve estratto dalla sua biografia in modo da incuriosire circa il canale di navigazione secodnario sugli artisti; </li>
+            <li>sezione con anteprima di un'ipotetica mappa interattiva con i contesti di provenienza dei progetti, in richiamo all'ultimo canale di navigaizone secondario sui luoghi; </li>
+            <li>sezione sugli ultimi articoli caricati nell'ultimo canale di navigazione primario, con relativa immagine e breve estratto; </li>
+            <li>footer uguale per tutte le pagine con elementi di metanavigazione quali:</li>
+            <ul> 
+                <li>link ai social network della pagina;</li>
+                <li>link al web project plan;</li>
+                <li>link ai contatti;</li>
+                <li>link al copyright</li>
+                <li>newsletter form.</li>
+            </ul>
+
+        </ul>
+
+        </div>
+        <div class="immagine3">
+
+        <img src="images/wireframe_home.jpg"> 
+
+         </div>
+
+       </div>
+        
+        <div class="row">
+        <div class="wireframe_raccolta">
+        <h5>Raccolta</h5>
+         <ul> 
+            <li>testata uguale per tutte le pagine con immagine evocativa dei progetti e titolo della risorsa;</li>
+            <li>barra di navigazione con i canali di navigazione primari uguale per tutte le pagine e la searchbar; </li>
+              <li> dalla barra di navigazione primaria è possibile accedere alla barra di navigazione secondaria; </li>
+            <li>briciole di pane per la navigazione contestuale;</li>
+            <li>bookmark;</li>
+            <li>lista dei progetti con link per raggiungere i progetti;</li>
+            <li>aside con link di navigazione contestuale;</li>
+            <li>footer uguale per tutte le pagine con elementi di metanavigazione quali:</li>
+            <ul> 
+                <li>link ai social network della pagina;</li>
+                <li>link al web project plan;</li>
+                <li>link ai contatti;</li>
+                <li>link al copyright</li>
+                <li>newsletter form.</li>
+            </ul>
+
+        </ul>
+           </div>
+        <div class="immagine4">
+
+        <img src="images/wireframe_raccolta.jpg"> 
+
+         </div>
+
+       </div>
+       
+       <div class="row">
+        <div class="wireframe_item">
+        <h5>Item</h5>
+         <ul> 
+            <li>testata uguale per tutte le pagine con immagine evocativa dei progetti e titolo della risorsa;</li>
+            <li>barra di navigazione con i canali di navigazione primari uguale per tutte le pagine e la searchbar; </li>
+              <li> dalla barra di navigazione primaria è possibile accedere alla barra di navigazione secondaria; </li>
+            <li>briciole di pane per la navigazione contestuale; </li>
+            <li>barra per la navigazione sequenziale dei progetti;</li>
+            <li>descrizione del progetto in questione;</li>
+            <li>aside con link di navigazione contestuale;</li>
+            <li>footer uguale per tutte le pagine con elementi di metanavigazione quali:</li>
+            <ul> 
+                <li>link ai social network della pagina;</li>
+                <li>link al web project plan;</li>
+                <li>link ai contatti;</li>
+                <li>link al copyright</li>
+                <li>newsletter form.</li>
+            </ul>
+
+        </ul>
+           </div>
+        <div class="immagine5">
+
+        <img src="images/wireframe_item.jpg"> 
+
+         </div>
+
+       </div>
+
+
+
+        <h4>Usabilità</h4>
+            La risorsa cerca di essere il pi&ugrave; intuitiva e agevole possibile per rispondere con efficacia alle necessit&agrave; dell’utente. <br/> 
+            Si &egrave; cercato dunque di rispettare questa volont&agrave; sia a livello strutturale che grafico. <br/>
+            Ecco quindi una serie di accorgimenti adottati:
+            <ul>
+                <li> un numero ristretto di voci nella <strong>navbar</strong> per favorire una pi&ugrave; veloce e chiara navigazione; </li>
+                <li> la <strong>navbar</strong> offre uno strumento di ricerca per qualsiasi contenuto presente sulla risorsa; </li>
+                <li>la <strong>navbar</strong> resta invariata in tutte le pagine per evitare confusione;</li>
+                <li> una <strong>homepage</strong> riassuntiva del materiale presente sulla risorsa per favorire un’immediata consapevolezza dei contenuti e stimolare la curiosità dell’utente;</li>
+                <li> il <strong>footer</strong> rimane uguale in tutte le pagine e anch’esso consta di pochi elementi, tutti di metanavigazioni;</li>
+                <li> inoltre il <strong>footer</strong> presenta icone standard e convenzionali per i <em>social network</em> connessi alla pagina;</li>
+                <li> sono presenti le &quot;<strong>briciole di pane</strong>&quot; nella sezione pi&ugrave; complessa, cio&egrave; quella di <strong>&quot;Esplora&quot;</strong>, in modo da facilitare la navigazione interna ed evitare di tornare indietro; </li>
+                <li> tutti i canali di navigazione secondari sono richiamati negli altri nell’<strong>aside</strong>, affinch&egrave; l’utente sia sempre cosciente di quali altri contenuti potrebbero interessargli;</li>
+                <li> la risorsa presenta uno stile coerente al suo contenuto circa la scelta dei <strong>colori</strong> e dei <strong>font</strong>, in modo da richiamare l’antica carta dei documenti e dei progetti architettonici pi&ugrave; famosi;</li>
+                <li> nella scelta di questi ultimi ci si &egrave; limitati ad una cerchia ristretta di opzioni presenti sulla risorsa: un solo font, il <strong>Palatino</strong>, e quattro colori (bianco, grigio, marrone e color sabbia).</li>
+
+            </ul>
+           </p>
+
+    <h2 id="linguaggi"> 3. Linguaggi </h2>
+
+       <p> 
+
+        <h4>HTML</h4> 
+        La versione HTML utilizzata per questa risorsa &egrave; <strong>HTML 5</strong>. <br/> Seguendo il principio dell'annidamento, all'onnicomprensivo elemento <em>html</em> &egrave; seguita la suddivisione in <em>head</em> e <em>body</em>.<br/>
+        Generalmente tutte le pagine presentano nel <em>body</em> una <em>nav</em>, una <em>section</em> e un <em>footer</em> con le medesime caratteristiche per dare continuit&agrave; grafica alla risorsa. Inoltre le pagine della raccolta e i singoli item presentano un <em>article</em> e un <em>aside</em> uguale per permettere la stessa linearità delle altre componenti della risorsa. <br/>
+        Queste sono state a loro volta suddivise in <em>div</em>, in modo da specificarne meglio le singole funzioni e costumizzare il contenuto in base alla necessit&agrave; della pagina.
+
+        <h4> CSS </h4>
+        &Egrave; stato utilizzato un foglio di stile (<strong>stile2.css</strong>) richiamato da tutte le pagine realizzate. <br/>
+        Si &egrave; dunque operato sul file css per le varie modifiche funzionali, come ad esempio:
+        <ul>
+            <li> la scelta del <strong>font</strong> e dei <strong>colori</strong> dei vari elementi;</li>
+            <li> la gestione della <strong>struttura</strong> delle varie componenti, come le dimensioni, il posizionamento, i margini, il padding, il line-height, ecc.;</li>
+            <li> la modifica dei <strong>buttons</strong>, del <strong>form</strong> e degli <strong>input</strong>;</li>
+            <li> l'uso della <strong>box shadow</strong> sulle card della homepage, dell'aside e delle immagini presenti sulla risorsa per dare maggiore risalto a questi elementi;</li>
+            <li> la gestione grafica dei <strong>link</strong> presenti sulla risorsa; </li>
+            <li> la gestione dell'accesso ai <strong>social</strong>.</li>
+        </ul>
+
+        
+        <h4> XML </h4>
+        La versione di <strong>XML</strong> utilizzata &egrave; la <strong>1.0</strong> per la descrizione e conservazione degli item della collezione. <br/> 
+        Il file xml &egrave; stato creato seguendo il vocabolario standardizzato <strong>Dublin Core</strong>:
+        <ul>
+            <li> <em>identifier</em>, l'identificativo dell'item; </li>
+            <li> <em>title</em>, il titolo dell'item; </li>
+            <li> <em>description</em>, una breve descriizone dell'item; </li>
+            <li> <em>creator</em>, il nome del creatore; </li>
+            <li> <em>date</em>, la data di creazione; </li>
+            <li> <em>source</em>, la risorsa d'ispirazione o di primaria crezione; </li>
+            <li> <em>format</em>, la dimensione dell'immagine e il supporto; </li>
+            <li> <em>relation</em>, il riferimento a risorse collegate; </li>
+            <li> <em>publisher</em>, il responsabile della pubblicazione; </li>
+            <li> <em>contributor</em>, chi ha partecipato o contribuito alla realizzazione del contenuto. </li>
+        </ul>
+        
+        <h4> Metadati </h4>
+        I metadati (<em>meta</em>) sono stati inseriti nelle sezioni <em>head</em> delle pagine realizzate. Questi hanno lo scopo di definire il contenuto della risorsa nelle sue maggiori caratteristiche identificative fornendo informazioni alla macchina circa la risorsa. <br/>
+        Questi fanno ancora una volta riferimento al vocabolario controllato <strong>DC</strong> e sono: <br/>
+
+        <ul> 
+        <li> <em>title</em>, il titolo della risorsa;</li>
+        <li> <em>creator</em>, l'autore della risorsa ;</li>
+        <li> <em>subject</em>, l'argomento generale della risorsa;</li>
+        <li> <em>description</em>, una breve descrizione della risorsa;</li>
+        <li> <em>publisher</em>, il responsabile della pubblicazione;</li>
+        <li> <em>date</em>, data di creazione della risorsa, secondo il formato YYYY-MM(-DD);</li>
+        <li> <em>format</em>, il formato della risorsa;</li>
+        <li> <em>identifier</em>, l'identificativo univoco (url);</li>
+        <li> <em>language</em>, la lingua in cui la risorsa è disponibile.</li>
+        </ul>
+
+        </p>
+
+    <h2 id="collezione"> 4. La collezione </h2>
+       <p> La collezione &egrave; rappresentata dall’insieme di progetti architettonici che in qualche modo hanno messo in discussione il modo comune di pensare, proposto ideali, cercato di rendere reale il futuro, ma che purtroppo per varie motivazioni non sono mai stati realizzati. <br/>
+       La loro catalogazione &egrave; presentata in uno dei canali di navigazione secondari, <a href="raccolta.html" target="_blank"><strong>&quot;Progetti&quot;</strong></a>, in cui sono elencati con le seguenti informazioni: <em>id</em>, <em>titolo</em>, <em>autore</em> e <em>data</em> di creazione. <br/>
+       L’elenco &egrave; accompagnato a sinistra da un <em>bookmark</em>, realizzato appositamente per la risorsa grazie a Photoshop, che graficamente cerca di sintetizzare i progetti pi&ugrave; interessanti della raccolta e a destra da un <em>aside</em> ricco di link ad altre pagine della risorsa.<br/>
+       Tramite link associato alla riga di riferimento del progetto si pu&ograve; raggiungere l’item desiderato, il quale si presenter&agrave; cos&igrave; strutturato (come per esempio è stato fatto con il progetto per l'<strong><a href="item.html" target="_blank">Abbazia di San Gallo</a></strong>):
+       <ul>
+        <li> l’<strong>immagine</strong> del progetto; </li>
+        <li> al di sotto di essa un serie di <strong>informazioni essenziali</strong> sul progetto quali: il titolo, l’autore, la data, il supporto su cui si presenta, le dimensioni di quest’ultimo e l’ubicazione del documento; </li>
+        <li> <strong>&quot;Il progetto&quot;</strong>: una descrizione dettagliata del progetto;</li>
+        <li><strong>&quot;Attualità&quot;</strong>: una sezione dedicata a quello che ne &egrave; stato del progetto, se ha magari avuto qualche applicazione o cosa &egrave; stato creato al suo posto; </li>
+        <li> <strong>&quot;Progetti correlati&quot;</strong>: una sezione dedicata ad una sommaria descrizione dei contenuti che questo specifico progetto ha saputo influenzare come ricerche, altre costruzioni, riflessioni filosofiche o altro, tutte raccolte in  <strong>&quot;Extra&quot;</strong> e raggiungibili tramite link;</li>
+        <li> un <em>accordion</em> diviso in:
+        <ul> 
+            <li><strong>&quot;Formati disponibili&quot;</strong> con il link al file XML relativo all’item <a href="specimen.xml" target="_blank"><i class="fa fa-file-code-o"></i></a></li>
+            <li> <strong>&quot;Collegamenti esterni&quot;</strong> con i link esterni ai vari <strong>&quot;Progetti correlati&quot;</strong>, presumibilmente raccolti anche in <strong>&quot;Extra&quot;</strong></li> 
+            <li><strong>&quot;Bibliografia&quot;</strong> con i link esterni relativi alle risorse da cui la descrizione dell’item ha preso spunto</li>
+        </ul>
+        <li> al di sopra dell'intera descrizione &egrave; possibile una navigazione sequenziale dei vari elementi della collezione. </li>
+        </ul>
+    
+    </p>
+
+    <h2 id="ses"> 5. Strumenti e servizi </h2>
+
+       <p> 
+        <h4>Produzione:</h4>
+        Per la produzione della risorsa sono stati utilizzati:
+        <ul>
+        <li> <strong>Sublime Text</strong> per la realizzazione delle pagine html, css e xml;</li>
+        <li> <strong>Photoshop</strong> per la realizzazione dell’immagine di sfondo della testata e dei bookmark dei canali di navigazione secondaria e la modifica delle immagini presenti sulla risorsa;</li>
+       </ul>
+
+        <h4>Conservazione:</h4>
+        Per garantire la longevit&agrave; della collezione e la sua disseminazione sul web si &egrave; deciso di usufruire del <strong>formato XML</strong>, con i suoi relativi metadati DC. <br/>
+        Infine il sito &egrave; stato riversato sull’hosting <strong>Altervista.org</strong>. 
+
+        <h4>Arricchimento:</h4>
+          Per l’arricchimento della risorsa, a partire dalla guida di <a href="https://www.w3schools.com/default.asp" target="_blank"><strong>w3schools.com</strong></a>, sono stati inclusi: <br/>
+          <ul> 
+            <li>dropdown in navbar;</li>
+            <li>search bar in navbar;</li>
+            <li>breadcrumbs (o &quot;briciole di pane&quot;);</li>
+            <li>accoridon;</li>
+            <li>timeline;</li>
+            <li>newsletter form;</li>
+            <li>social media bottons;</li>
+            <li>font awsome icons.</li>
+        </ul>
+
+        <h4>Valorizzazione:</h4>
+          La risorsa avendo un carattere divulgativo non prevede che gli utenti siano direttamente &quot;attivi&quot;, ma sono stati previsiti nel footer:<br/> 
+           <ul> 
+            <li>la possibilit&agrave; di iscriversi alla <strong>Newsletter</strong> tramite l’apposito form e rimanere sempre aggiornati sulle ultime novit&agrave;;</li>
+           <li>la possibilit&agrave; di contattare lo staff attraverso <strong>&quot;Contattaci&quot;</strong> per consigli, suggestioni o critiche;</li>
+           <li>i vari <strong>social network</strong> per la comunicazione dei contenuti della pagina e l’interattivit&agrave; tra gli utenti (Twitter, Facebook, Instagram e Pinterest).</li>
+        </ul>
+       </p>
+
+    <h2 id="bib"> 6. Bibliografia </h2>
+
+       <p> Tutte le immagini utilizzate sono state prese da <strong><a href="https://it.wikisource.org/wiki/Pagina_principale">Wikisource</a></strong> o contrassegnate per riutilizzo con modifiche. <br/>
+        Per la realizzazione della risorsa sono state utilizzate le seguenti fonti:
+        <ul> 
+            <li> il <strong><a href="www.iol.unibo.it" target="_blank">materiale didattico online su iol.unibo.it</a></strong> per lo studio dei linguaggi e del progetto;</li>
+            <li><em>&quot;Metodologie informatiche e discipline umanistiche&quot;</em> di <strong>Francesca Tomasi</strong> per lo studio dei linguaggi;</li>
+            <li> <strong><a href="https://www.w3schools.com/default.asp" target="_blank">w3schools.com</a></strong> per l’approfondimento circa i linguaggi utilizzati;</li>
+            <li> <strong><a href="https://www.html.it" target="_blank">html.it</a></strong> per l’approfondimento circa i linguaggi utilizzati;</li>
+            <li><strong><a href="http://www.treccani.it/enciclopedia/utopia-nell-architettura_%28XXI-Secolo%29/" target="_blank">treccani.it/ L'utopia nell'architettura</a></strong> per le informazioni circa l’argomento della risorsa;</li>
+            <li><strong><a href="https://it.wikipedia.org/wiki/Architettura_rivoluzionaria" target="_blank">wikipedia.org/ Architettura rivoluzionaria</a></strong> per le informazioni circa l’argomento della risorsa;</li>
+            <li><em>&quot;Atlante delle architetture Fantastiche&quot;</em>di <strong>Philip Wilkinson</strong> per le informazioni circa l’argomento della risorsa;</li>
+            <li><em>&quot;Nel segno di Giano: passato e futuro nell’arte europea tra Sette e Ottocento&quot;</em> di <strong>Antonio Pinelli</strong> per le informazioni circa l’argomento della risorsa.</li>
+
+    </p>
+
+   </article>
+
+<div class="button">
+<div class="tooltip"><a href=#testata><i class="fas fa-angle-double-up fa-2x"></i><span class="tooltiptext">Torna su</span></a>
+</div>
+
+
+    </div>
+    <div id="piedepagina">
+    <footer> 
+    	<p> &copy; Laura Travagini, 2020 </p>  
+    </footer>
+    </div>
+</body>
+</div>
+</html>

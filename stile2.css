@@ -1,0 +1,1096 @@
+* { box-sizing: border-box;
+}
+
+header {
+   position: relative;
+   margin: 0;
+   height: 300px;
+   width:100%;
+   padding: 40px;
+   background-image: url(images/sfondocopia.jpg);
+
+ } 
+
+body {
+  background-color: #e0ddd2;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  margin-top: 40px;
+  color: #38362e;
+  font-size: 50px; 
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-transform: uppercase;
+  width: 100%;
+  text-shadow: 1px 5px 5px white;
+  text-align: center;
+  position: absolute;
+}
+
+
+h2 {
+  color: #38362e;
+  text-align: left;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-transform: uppercase;
+  display: flex;
+  justify-content: left;
+  padding: 20px;
+}
+
+h3 {
+  color: #38362e;
+  text-align: left;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  display: flex;
+  justify-content: left;
+  text-transform: uppercase;
+  padding: 20px;
+  padding-top:30px;
+  border-bottom: 3px solid #38362e;
+}
+
+h4 {
+  color: black;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  color: #38362e;
+}
+
+h5 {
+  color: black;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  font-size: 16px;
+  text-align: left;
+  display: flex;
+  color: #38362e;
+ 
+}
+
+p  {
+ font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+ text-align: left;
+ line-height: 1.5;
+ color: #38362e;
+ padding: 15px;
+}
+
+/* nav */
+.menu {
+  position: relative;
+  top: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: #38362e;
+  position: sticky;
+  top: 0;
+}
+
+li{
+  float: left;
+  text-align: center;
+}
+
+li a {
+  display: block;
+  color: white;
+  float: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    text-transform: uppercase;
+  font-size: 20px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: white;
+  color: #38362e;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #38362e;
+  float: none;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Style the search box inside the navigation bar */
+.menu input[type=text] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  font-style: italic;
+}
+.menu .search-container {
+  float: right;
+  margin-top: 2px;
+}
+
+.menu .search-container button {
+  float: left;
+  padding: 6px 10px;
+  margin-top: 8px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.menu .search-container button:hover {
+  background: #ccc;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .menu .search-container {
+    float: none;
+  }
+  .menu a, .menu input[type=text], .menu .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .menu input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+/* fine nav */
+
+/* BRICIOLE DI PANE */
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 3px 3px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li.breadcrumb {
+  display: inline;
+  font-size: 16px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li.breadcrumb+li.breadcrumb:before {
+  padding: 5px;
+  color: black;
+  content: "/\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a.breadcrumb {
+  color: grey;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a.breadcrumb:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* FINE BRICIOLE DI PANE */
+
+/* CORPO */
+
+section {
+  margin:0;
+}
+
+
+/* colonne corpo */
+.column {
+  float: left;
+  width: 18%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 25px;
+  margin-left: 30px;
+}
+
+
+.progetti {
+  float: left;
+  width: 60%;
+  margin-left: 30px;
+}
+
+.collageprogetti {
+  float: left;
+  width: 15%;
+  margin-left: 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.collageprogetti img {
+ width: 100%;
+}
+
+.oggetto {
+  float: left;
+  width: 75%;
+  padding: 15px;
+  margin-left: 40px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.info {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+.info p {
+  line-height: 30px;
+  width: 400px;
+  margin-bottom: 2px;
+}
+
+.descrizione {
+  float: right;
+  width: 50%;
+  padding-right: 30px;
+}
+
+.colonnatimeline {
+  float: right;
+  width: 38%;
+  padding: 20px;
+  box-shadow: 3px 3px 3px 3px grey;
+  margin-top: 130px;
+  margin-right: 20px;
+}
+
+.storia {
+  float: left;
+  width: 60%;
+  padding: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:900px) {
+  .column {
+    width: 100%;
+  }
+  .progetti {
+    width: 100%;
+  }
+  .collageprogetti {
+    width: 100%;
+  }
+  .oggetto {
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+  }
+  .descrizione {
+    width: 100%;
+  }
+  .colonnatimeline {
+    width: 100%;
+  }
+  .storia {
+    width: 100%;
+  }
+
+}
+
+/* RACCOLTA */
+
+table {
+  box-shadow: 0px 4px 8px 0px grey;
+  transition: 0.3s;
+  background-color: white;
+  padding: 18px;
+  width: 100%;
+  }
+ 
+th {
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+text-align: justify;
+line-height: 1.5;
+color: #38362e;
+padding: 15px;
+ }
+
+td {
+font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+text-align: justify;
+line-height: 1.5;
+color: #38362e;
+padding: 5px;
+font-size: 18px;
+ }
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+a {
+ color: #38362e;
+ text-decoration: none;
+}
+
+a:hover {
+  color: #38362e;
+  text-decoration: underline;
+}
+
+a:active {
+  color: gold;
+  text-decoration: underline;
+}
+
+/* FINE RACCOLTA */
+
+article { 
+  box-shadow: 0px 4px 8px 0px grey;
+  transition: 0.3s;
+  background-color: white;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+article a {
+  color: #38362e;
+  text-decoration: none;
+}
+/* mouse over link */
+article a:hover {
+  color: #38362e;
+  text-decoration: underline;
+}
+
+/* selected link */
+article a:active {
+  color: red;
+  text-decoration: underline;
+}
+
+
+.pagination {
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+
+/* Pagination links */
+.pagination a {
+  color: #38362e;
+  float: left;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.activ {
+  background-color: #38362e;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.activ) {background-color: #ddd;}
+
+.pannello { 
+  box-shadow: 0px 4px 8px 0px grey;
+  transition: 0.3s;
+  background-color: white;
+  margin-top: 60px;
+}
+
+.accordion {
+ margin-left: 10px;
+ margin-bottom: 20px;
+ margin-top: 900px;
+ width: 990px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: white;
+  color: #38362e;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border-bottom: 3px solid #38362e;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  text-align: left;
+  outline: none;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  color: grey;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.cntnt {
+  display: none;
+  overflow: hidden;
+  text-align: left;
+  transition: max-height 0.2s ease-out;
+  background-color: white;
+  color: #38362e;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+.info_oggetto {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  text-align: center;
+  background-color: white ;
+  position: sticky;
+  position: static;
+  top: 0;
+}
+
+#piantasangallo {
+  float: left;
+  clear: left;
+  height: 400px;
+  width: 500px;
+  position: static;
+  padding-bottom: 30px;
+  max-width: 100%;
+}
+
+.descrizione {
+  position: static;
+  max-width: 500px;
+  margin: auto;
+  padding-bottom: 30px;
+  background-color: white;
+}
+
+.overflow1 {
+  color: black;
+  height: 570px;
+  overflow: scroll;
+  background-color: white;
+  border-bottom: 3px solid #38362e;
+}
+
+.overflow2 {
+  color: black;
+  height: 200px;
+  overflow: scroll;
+  background-color: white;
+  border-bottom: 3px solid #38362e;
+}
+
+.overflow3 {
+  color: black;
+  float: left;
+  height: 200px;
+  width: 480px;
+  overflow: scroll;
+  background-color: white;
+  margin-left: 12px;
+  border-bottom: 3px solid #38362e;
+}
+
+.overflow3_title {
+  color: black;
+  float: left;
+  margin-left: 18px;
+  background-color: white;
+}
+
+.fa-file-code-o {
+  color: #38362e;
+  font-size: 40px;
+}
+
+/* FINE CORPO */
+
+/* ASIDE */
+
+.column {
+  background: #e0ddd2 ;
+  position: static;
+}
+
+.card {
+  margin-top: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: white;
+}
+
+
+.card img {
+ width: 100%;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   background-color: white;
+}
+
+.container {
+  padding: 2px 16px;
+  background-color: white;
+}
+
+/*FINE ASIDE */
+
+/* TIMELINE DX */
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #38362e;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #e0ddd2;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+.timeline a {
+  color: #38362e;
+  text-decoration: none;
+}
+/* mouse over link */
+.timeline a:hover {
+  color: #38362e;
+  text-decoration: underline;
+}
+
+/* selected link */
+.timeline a:active {
+  color: red;
+  text-decoration: underline;
+}
+
+/* Container around content */
+.containr {
+  padding: 20px 20px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.containr::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #e0ddd2;
+  border: 4px solid white;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.content {
+  padding: 10px 20px;
+  background-color: white;
+  text-align: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  position: relative;
+  border-radius: 40px;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media screen and (max-width: 600px) {
+/* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+/* Full-width containers */
+  .containr {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+/* Make sure that all arrows are pointing leftwards */
+  .containr::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+/* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+/* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+/* FINE TIMELINE DX */
+
+/* HOMEPAGE */
+
+.intro {
+  padding:35px;
+  word-spacing: 2px;
+  line-height: 30px;
+  font-size: 18px;
+  text-align: center;
+  position: relative;
+}
+
+.introduzione {
+  position: relative;
+  margin: 0;
+
+}
+
+/* */ 
+
+.immagine {
+  float: left;
+  width: 25%;
+  height: 300px;
+  flex: 25%;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.immagine img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.immagine:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.immagini {
+  display: flex;
+  margin-left: 60px;
+  margin-right: 40px;
+  margin-bottom: 60px;
+}
+
+.immagini::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.text-img {
+  bottom: 210px;
+  overflow: auto;
+  position: relative;
+  opacity: 0.7;
+  filter: alpha(opacity=50);
+
+}
+
+.text-img p {
+  background-color: #38362e;
+  color: white;
+  text-align: center;
+  padding: 4px;
+
+}
+
+
+
+/* */
+
+.artisti {
+ position: relative;
+ background-color: white;
+ margin: 0;
+ height: 420px;
+ padding: 40px;
+}
+
+.boullee {
+  float: left;
+  width: 40%;
+
+}
+.boullee img {
+  float: right;
+  width: 330px;
+  height: 330px;
+  object-fit: cover;
+  overflow: auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.boullee img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.boullee2 {
+  float: left;
+  width: 50%;
+  height: 300px;
+}
+
+.boullee2 h4{
+ color: #38362e;
+  text-align: left;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  display: flex;
+  justify-content: left;
+  font-size: 20px;
+  margin-left: 30px;
+  margin-bottom: 0;
+}
+
+.boullee2 p {
+ color: #38362e;
+  text-align: left;
+  float: left;
+  display: flex;
+  justify-content: left;
+  font-size: 18px;
+  position: relative;
+  display: block;
+  margin-left: 20px;
+
+}
+
+.artisti:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* CARD ARTISTA */
+
+.card-artista {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  margin-left: 150px;
+  margin-top: 100px;
+  margin-right: 100px;
+  transition: 0.3s;
+  background-color: white;
+  float: left;
+  width: 250px; 
+  height: 300px;
+  margin-right: 60px;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card-artista:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+   transition: 0.3s;
+}
+
+.artista {
+  width: 250px; 
+  height: 230px;
+}
+
+/* Add some padding inside the card container */
+.container-artista {
+ height: 50px;
+}
+
+/* */
+
+.mappa {
+margin-top: 50px;
+ position: relative;
+ margin-right: 250px;
+ margin-left: 250px;
+ margin-bottom: 50px;
+}
+
+.imgmappa {
+ width:100%;
+}
+
+.mappa:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  background-color: white;
+}
+ 
+/* */ 
+
+.extra {
+  position: relative;
+  display: flex;
+  background-color: white;
+  margin: 0;
+  height: 660px;
+  padding: 40px;
+}
+
+.extra::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* CARD EXTRA */
+
+.card-extra {
+  float: left;
+  width: 25%;
+  height: 250px;
+  flex: 25%;
+  margin-top: 40px;
+  margin-left: 30px;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card-extra img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-extra:hover {
+  box-shadow: 0 5px 15px 0 rgba(0,0,0,0.2);
+}
+
+.card-extra h4 {
+  text-align: center;
+  line-height: 20px;
+}
+
+.card-extra p {
+  position: relative;
+  display: block;
+  text-align: left;
+  padding: 0;
+}
+
+
+
+/* FINE HOMEPAGE*/
+
+footer {
+  height: 200px;
+  display: center;
+  justify-content: flex-end;
+  padding: 40px;
+  background: #38362e;
+  text-align: center;
+  color: white;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-transform: uppercase;
+  clear: both;
+}
+
+.social {
+  float: left;
+  width: 33.3%
+}
+.copy {
+  float: left;
+  width: 33.3%;
+  line-height: 40px;
+}
+.newsletter {
+  float: left;
+  width: 33.3%;
+}
+
+
+.wpp a {
+  display: block;
+  color: white;
+  float: center;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  text-transform: uppercase;
+  font-size: 17px;
+  text-decoration: none;
+}
+
+.wpp a:hover {
+  text-decoration: underline;
+}
+
+/* Style all font awesome icons */
+.fa-facebook, .fa-twitter, .fa-instagram, .fa-pinterest{
+  padding: 20px;
+  margin-top: 15px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+/* NEWSLETTER */
+
+form {
+  padding: 5px;
+}
+
+.box {
+  margin-top: 10px;
+}
+
+input[type=submit] {
+  background-color: #e0ddd2;
+  color: black;
+  position: relative;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+
+/* FINE NEWSLETTER */
